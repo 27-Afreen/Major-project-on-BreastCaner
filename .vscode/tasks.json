@@ -1,0 +1,33 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Prepare data",
+      "type": "shell",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+      "args": ["src\\prepare_data.py"],
+      "problemMatcher": []
+    },
+    {
+      "label": "Train model",
+      "type": "shell",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+      "args": ["src\\train.py"],
+      "problemMatcher": []
+    },
+    {
+      "label": "Evaluate model",
+      "type": "shell",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+      "args": ["src\\evaluate.py"],
+      "problemMatcher": []
+    },
+    {
+      "label": "Predict sample",
+      "type": "shell",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+      "args": ["src\\predict.py", "--sample", "0"],
+      "problemMatcher": []
+    }
+  ]
+}

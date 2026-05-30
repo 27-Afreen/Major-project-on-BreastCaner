@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Train Breast Cancer Model",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}\\src\\train.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Predict Sample",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}\\src\\predict.py",
+      "args": ["--sample", "0"],
+      "console": "integratedTerminal"
+    }
+  ]
+}
